@@ -24,7 +24,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapGet("/apple-app-site-association", async (http) => {
-    await http.Response.WriteAsJsonAsync(new AppleDeepLink { applinks=new AppLinks { apps=new string[] { },details=new AppDetails { appID= "J52R8YYJBF.ch.selise.sln.fcsk", paths=new string[] { "/login/reset-password-verification/*"}} } });
+    await http.Response.WriteAsJsonAsync(new AppleDeepLink { applinks=new AppLinks { apps=new string[] { },details= new AppDetails[] { new AppDetails { appID = "J52R8YYJBF.ch.selise.sln.fcsk", paths = new string[] { "/login/reset-password-verification/*" } } } } });
 });
 
 app.Run();

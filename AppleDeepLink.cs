@@ -8,7 +8,7 @@
     public class AppLinks
     {
         public string[] apps { get; set; }
-        public AppDetails details { get; set; }
+        public AppDetails[] details { get; set; }
     }
     public class AppDetails
     {
